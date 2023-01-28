@@ -1,0 +1,152 @@
+:root{
+--Softred: hsl(10, 79%, 65%);
+--Cyan: hsl(186, 34%, 60%);
+--Darkbrown: hsl(25, 47%, 15%);
+--Mediumbrown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Verypaleorange: hsl(33, 100%, 98%);
+}
+
+html, body{
+    height: 100vh;
+}
+body{
+    font-size: 18px;
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headBar {
+    background-color: var(--Softred);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    width: 420px;
+    margin: auto;
+    border-radius: 12px;
+    color: var(--Verypaleorange);
+}
+
+.headBar-left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.headBar-left h1{
+    color: var(--Cream);
+    font-size: 16px;
+}
+
+.headBar-left p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main{
+    background-color: var(--Verypaleorange);
+    width: 420px;
+    margin: auto;
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.main h1{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.main .footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin-top: 12px;
+    height:72px;
+}
+
+
+.main .footer .rigth{
+    align-self: flex-start;
+    text-align: left;
+}
+
+.main .footer p {
+    margin-top: 8px;
+    font-size: 24px;
+}
+.main .footer span {
+    color: #777;
+}
+.main .footer .left{
+    align-self: flex-end;
+    text-align: right;
+}
+.main .footer .left p{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+.main .footer{
+    border-top: 1px solid #ccc;
+}
+
+.graphic{
+    padding: 24px 12px 12px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.box{
+    background-color: var(--Softred);
+    width: 36px;
+    border-radius: 4px;
+}
+.box:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.graph-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.graph-box:hover .amount{
+    visibility: visible;
+
+}
+
+
+
+.amount{
+    visibility: hidden;
+    background-color: black;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+
+.graph-box p{
+    color: #999;
+    font-size: 16px;
+}
