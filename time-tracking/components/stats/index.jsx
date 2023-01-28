@@ -4,10 +4,6 @@ import Image from 'next/image';
 
 function Stats({tab}) {
 const data = Data;
-let baran;
-if(tab===0){ baran = "daily"}
-else if(tab===1){ baran = "weekly"}
-else if(tab===2){ baran = "monthly"}
   return (
     <div>
         
@@ -23,7 +19,6 @@ else if(tab===2){ baran = "monthly"}
                 <p>{e.title}</p>
                 <span><Image src={"/icon-ellipsis.svg"} width={14} height={14} alt="sa" /></span>
                 </div>
-                {console.log(baran)}
                 <div className='statsTime'>{e.timeframes.daily.current}hrs</div>
                 <p className='statsLast'>last week - {e.timeframes.daily.previous}hrs</p>
             </div>
