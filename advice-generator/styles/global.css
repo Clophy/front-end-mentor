@@ -23,7 +23,8 @@ main{
 
 .container{
     background-color: var(--DarkGrayishBlue);
-    width: 40%;
+    width: 375px;
+    max-width: 375px;
     min-width: 375px;
     text-align: center;
     padding: 24px;
